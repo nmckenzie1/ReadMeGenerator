@@ -13,7 +13,7 @@
 
   * [Contributing](#contributing)
 
-  * [Road Map](#road)
+  * [Road Map](#future)
   
   * [Contact](#contact)
   
@@ -21,7 +21,7 @@
   
   ## About
   
-  This app creates beautiful readMe files.
+  This app creates lovely readMe
   
   ## Installation
   
@@ -34,12 +34,10 @@
   ```
   npm i
   ```
-
-  A video instillation guide can be found at https://drive.google.com/file/d/1J2VMAYuPYTJnlp4LfRF0O3w7-OxPjFEp/view?usp=sharing
   
   ## Usage
   
-  If you need a program to generate a good lookin' readMe
+  If you need to create readMe files and want an app to make beautiful ones with ease.
   
   ## License
   
@@ -47,11 +45,11 @@
     
   ## Contributing
   
-  Please e-mail me any proposed changes to this app.
+  Please e-mail me any proposed changes to this application.
 
-  ## Road Map
+  ## Future
 
-  I would like to add HTML to the readMe files.
+  I would like to add HTML to the ReadMe files.
   
   ## Contact
   

@@ -39,7 +39,7 @@ function renderLicenseBadge(license) {
     ${renderLicenseLink(data.license)}
   * [Contributing](#contributing)
 
-  * [Road Map](#road)
+  * [Road Map](#future)
   
   * [Contact](#contact)
   
@@ -71,7 +71,7 @@ function renderLicenseBadge(license) {
   
   ${data.contributing}
 
-  ## Road Map
+  ## Future
 
   ${data.future}
   
