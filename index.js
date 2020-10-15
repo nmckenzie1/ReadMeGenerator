@@ -1,6 +1,7 @@
-// const fs = require("fs");
-
+const fs = require("fs");
 const inquirer = require("inquirer");
+const readmegenerator = require("./readmegenerator");
+const path = require("path");
 
 
 content = [
@@ -21,29 +22,57 @@ content = [
     },
     {
       type: "input",
+      name: "projectName",
+      message: "What is name of the repo on Github (camelCased)?"
+    },
+    {
+      type: "input",
       name: "description",
-      message: "What in the heck duz this thing do?"
+      message: "Gimme a description of dis app?"
     },
     {
       type: "input",
       name: "usage",
-      message: "What duz user need to know about da usage of dis thang??",
+      message: "Why would someone use dis app??",
     },
     {
       type: "input",
       name: "contributing",
-      message: "Who helped u maek dis thing?",
+      message: "Would you like people to be able to contribute to your repo? If yes, then how?",
     },
+    {
+      type: "input",
+      name: "installation",
+      message: "What command should be run to install dependencies?",
+      default: "npm i"
+    },
+    {
+      type: "input",
+      name: "future",
+      message: "What would you like to do with this app in the future??",
+     },
     {
         type: "list",
         name: "license",
         message: "You got a license for dat thing?",
-        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+        choices: ["MIT", "APACHE 2.0", "GPLV3", "BSD 3", "None"]
     },
+    {
+      type: "input",
+      name: "thanks",
+      message: "Who helped you with this project?",
+      
+  },
+
   ];
+  function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+  }
+  
   function init() {
     inquirer.prompt(content)
     .then((inquirerResponses) => {
       console.log(inquirerResponses);
+      writeToFile("README.md", readmegenerator({...inquirerResponses}));
     })};
   init()
