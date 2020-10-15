@@ -34,6 +34,8 @@
   ```
   npm i
   ```
+
+  A video instillation guide can be found at https://drive.google.com/file/d/1J2VMAYuPYTJnlp4LfRF0O3w7-OxPjFEp/view?usp=sharing
   
   ## Usage
   
